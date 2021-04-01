@@ -3,7 +3,7 @@ const container = document.querySelector(".entry-container");
 
 const getProduts = async () => {
   const headers = new Headers();
-  let url = "http://localhost:3000/api/v1/product";
+  let url = "https://avios0-api.herokuapp.com/api/v1/product";
   headers.append("Content-Type", "application/json");
   try {
     let response = await fetch(url, {
